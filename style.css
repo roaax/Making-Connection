@@ -1,85 +1,92 @@
-*{
+* {
     font-family: 'Dosis', sans-serif;
+    /* margin: 0px;
+    padding: 0px; */
 }
-.container{
+
+.container {
     height: 20%;
     width: 30%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     border: 2px solid gray;
     margin: 30px auto;
     font-family: 'Dosis', sans-serif;
 
 }
 
-.blue{
-    margin:  -2px -2px 0px -2px ;
+.head {
+    margin: -2px -2px 0px -2px;
     height: 300px;
     width: auto;
-    background-color:#18a2b8;
-    align-items:center;
+    background-color: #18a2b8;
+    align-items: center;
     vertical-align: top;
     padding: 2%;
 
 }
 
-#iconuser{
+#iconuser {
     margin: -13px 0px 0px 7px;
     padding: 2px;
     height: 50px;
     border: 2px solid gray;
-    border-radius:50% ;
+    border-radius: 50%;
     background-color: white;
 
 
 }
 
-.name{
+.name {
     width: auto;
     align-items: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding:2% 0% 0% 3%;
+    padding: 2% 0% 0% 3%;
 }
 
-h1{
+h1 {
     margin-bottom: 1%;
 }
 
-.location{
+.location {
     display: flex;
-    margin: 1% 0% ;
+    margin: 1% 0%;
     padding-left: 3%;
 }
 
-h5{
+h5 {
     margin: 0;
     margin-left: 12px;
 }
-#img{
+
+#img {
     height: 15px;
 }
-.info{
+
+.info {
     padding-left: 3%;
     margin: 2% 0%
 }
 
-.edit{
+.edit {
     display: flex;
     align-items: center;
-    padding:1% 0% 3% 3%;
+    padding: 1% 0% 3% 3%;
 }
 
-p{
+p {
     margin: 0%;
     font-size: small;
 }
 
-a{
+a {
     /* padding-left: 2%; */
     font-size: small;
-}.nav{
+}
+
+.nav {
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -90,12 +97,13 @@ a{
     font-weight: bold;
 }
 
-.nav-links{
+.nav-links {
     width: 90%;
     display: flex;
     flex-direction: row;
 }
-.nav-title{
+
+.nav-title {
     color: white;
     font-weight: 50%;
     margin-top: auto;
@@ -103,7 +111,7 @@ a{
     font-family: 'Dosis', sans-serif;
 }
 
-.nav-list{
+.nav-list {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -111,30 +119,32 @@ a{
     width: 46%;
 }
 
-.btn{
+.btn {
     color: white;
-    background-color:#18a2b8;
+    background-color: #18a2b8;
     font: bolder;
-    border: 2px solid rgb(0, 0, 0); /* Green */
-    height:30px;
+    border: 2px solid rgb(0, 0, 0);
+    /* Green */
+    height: 30px;
     width: 75px;
     box-shadow: 4px 4px black;
 
 }
-#active{
+
+#active {
     color: white;
 }
 
 .nav-list a {
     color: rgb(182, 179, 179);
-    text-decoration: none ;
+    text-decoration: none;
     font-weight: bold;
 }
 
 
 /* main */
 
-.main{
+.main {
     display: flex;
     align-items: center;
     /* background-color: blanchedalmond; */
@@ -145,25 +155,28 @@ a{
 
 }
 
-.information , .connections{
+.usercard .connections {
     display: flex;
     flex-direction: column;
-    justify-content:space-;
+    justify-content: space-;
     padding-top: 2%;
 }
-.information{
+
+.usercard {
     width: 50%;
 
 }
-.connections{
+
+.connections {
     width: 30%;
 }
 
 
-/* information  */
 
 
-.card ,.education  {
+
+.card,
+.education {
     display: flex;
     flex-direction: column;
     background-color: #333333;
@@ -175,110 +188,118 @@ a{
 
 
 
-.blue , .black{
-    margin:  -2px -2px 0px -2px ;
+.head,
+.headother {
+    margin: -2px -2px 0px -2px;
     width: auto;
-    align-items:center;
+    align-items: center;
     vertical-align: top;
     padding: 1%;
 
 }
-.blue{
+
+.head {
     height: 60px;
-    background-color:#18a2b8;
+    background-color: #18a2b8;
 }
 
-.black{
+.headother {
     height: 0%;
     background-color: #333333;
     display: flex;
     padding-left: 4%;
 }
 
-.black  p {
+.headother p {
     color: white;
     margin: 0%;
     padding: 2%;
     font-size: large;
 }
-#iconuser{
+
+#iconuser {
     margin: -1px 0px 0px 7px;
     padding: 2px;
     height: 50px;
     border: 2px solid gray;
-    border-radius:50% ;
+    border-radius: 50%;
     background-color: white;
 
 
 }
 
-.name{
+.name {
     width: auto;
     align-items: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding:2% 0% 0% 3%;
+    padding: 2% 0% 0% 3%;
 }
 
-h1{
+h1 {
     margin-bottom: 1%;
 }
 
-.location{
+.location {
     display: flex;
-    margin: 1% 0% ;
+    margin: 1% 0%;
     padding-left: 3%;
 }
 
-h5{
+h5 {
     margin: 0;
     margin-left: 12px;
 }
-#img{
+
+#img {
     height: 15px;
 }
-.info{
+
+.moreinfo {
     padding-left: 3%;
     margin: 2% 0%
 }
-.info h4{
+
+.moreinfo h4 {
     margin: 0% 0%;
 }
 
-.edit{
+.edit {
     display: flex;
     align-items: center;
-    padding:1% 0% 3% 3%;
+    padding: 1% 0% 3% 3%;
 }
 
-p{
+p {
     margin: 0%;
     font-size: small;
 }
 
-.edit a{
+.edit a {
     padding-left: 2%;
     font-size: medium;
 }
 
-.info-education{
+.infoedu {
     padding: 0% 0% 2% 2%;
 }
 
-.info-education h4{
+.infoedu h4 {
     color: gray;
     margin-top: 0%;
 }
 
-.info-education h3{
+.infoedu h3 {
     margin-bottom: 1%;
 }
 
 /* connections */
 
-.requests{
+.requests {
     margin: 2% 0%;
+    margin-bottom: 15px;
+    margin-top: 21px;
     display: flex;
     flex-direction: column;
     border: 2px solid gray;
@@ -286,7 +307,7 @@ p{
 }
 
 
-#HowMany{
+#HowMany {
     text-align: center;
     background-color: #bdbdbd;
     color: #fff;
@@ -296,7 +317,7 @@ p{
     width: 10%;
 }
 
-#num{
+#num {
     text-align: center;
     background-color: #bdbdbd;
     color: #fff;
@@ -306,53 +327,55 @@ p{
     width: 23%;
 }
 
-.new-friend{
+.new-friend {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 40px;
     padding: 2%;
 }
-.new-friend img{
+
+.new-friend img {
     padding: 3px;
     height: 28px;
     border-radius: 50%;
     align-items: center;
 }
-.button{
+
+.button {
     padding: 2px;
     height: 1%;
-    border-radius:20% ;
+    border-radius: 20%;
     border: none;
 }
 
-.name-friend{
+.name-friend {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.button-requests{
+.button-requests {
     width: 20%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
 }
-.info-requests{
+
+.info-requests {
     display: flex;
     flex-direction: column;
 }
 
-.friend{
-    margin: 2% 0%;
-    margin: 2% 0%;
+.friend {
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     border: 2px solid gray;
     font-family: 'Dosis', sans-serif;
 }
 
-.view-more{
-    border-top:solid gray;
+.view-more {
+    border-top: solid gray;
     padding: 2% 4%;
 }

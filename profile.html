@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,27 +14,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <script src="profile.js"></script>
+
 <body>
+
+    <!-- ___________________________________ Nav Bar __________________________________ -->
+
     <div class="nav">
-        <div class ="nav-links" >
+        <div class="nav-links">
             <h1 class="nav-title">Profile</h1>
-            <ul class = "nav-list">
+            <ul class="nav-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#" id="active">My Profile</a></li>
                 <li><a href="#">Find Connections</a></li>
             </ul>
-        </div>            
+        </div>
         <button class="btn">Sign Out</button>
     </div>
 
-    <div class = "main">
-        <div class = "information">
+    <!-- ___________________________________  User Card  __________________________________ -->
+    <div class="main">
+        <div class="usercard">
             <div class="card">
-                <div class="blue">
+                <div class="head">
                     <br>
                     <img id="iconuser" src="icons/user-circle.png" alt="icon user">
                 </div>
-                
+
                 <div class="name">
                     <h1>Jane Doe</h1>
                 </div>
@@ -43,34 +50,38 @@
                     <h5>Seattle</h5>
                 </div>
 
-                <div class="info">
+                <div class="moreinfo">
                     <h4>Developer | Engineer | Problem Solver</h4>
                     <h4>Master of shadows and the Internet!</h4>
                 </div>
 
                 <div class="edit">
                     <img id="img" src="icons/gear.png" alt="icon edit">
-                    <a href="#"> edit profile</a>
+                    <a href="#" onclick="change(this)"> edit profile</a>
                 </div>
             </div>
 
-        <div class = education>
-            <div class="black">
-                <p>Education</p>
+
+            <!-- ___________________________________ Education __________________________________ -->
+            <div class=education>
+                <div class="headother">
+                    <p>Education</p>
+                </div>
+                <div class="infoedu">
+                    <h3>Coding Dojo - Full stack Bootcamp</h3>
+                    <h4>Des 2019 - Mar 2020</h4>
+                    <h3>Triple black belt in Python, MERN, and C#..</h3>
+
+                </div>
             </div>
-            <div class="info-education">
-                <h3>Coding Dojo - Full stack Bootcamp</h3>
-                <h4>Des 2019 - Mar 2020</h4>
-                <h3>Triple black belt in Python, MERN, and C#..</h3>
-                
-            </div>
-        </div>
         </div>
 
+
+        <!-- ___________________________________ Connection Req __________________________________ -->
         <div class="connections">
 
-            <div class = "requests">
-                <div class="black">
+            <div class="requests">
+                <div class="headother">
                     <h2 id="HowMany">2</h2>
                     <p>Connections Requests</p>
                 </div>
@@ -78,73 +89,74 @@
 
                     <div class="new-friend">
                         <div class="name-friend">
-                        <img src="icons/user-circle.png" alt="img user">
-                        <h4>Todd E</h4>
-                    </div>
-                    <div class="button-requests">
-                        <img class="button" src="icons/close-circle.png" alt="cancel user">
-                        <img class="button" src="icons/accept-circle.png" alt="add user">
-                        
-                    </div>
+                            <img src="icons/user-circle.png" alt="img user">
+                            <h4>Todd E</h4>
+                        </div>
+                        <div class="button-requests" >
+                            <img onclick="CancelFriend(this)" class="button" src="icons/close-circle.png" alt="cancel user" >
+                            <img onclick="addFriend(this)" class="button" src="icons/accept-circle.png" alt="add user" >
+                        </div>
                     </div>
 
                     <div class="new-friend">
                         <div class="name-friend">
-                        <img src="icons/user-circle.png" alt="img user">
-                        <h4>Phil K</h4>
-                    </div>
-                    <div class="button-requests">
-                        <img class="button" src="icons/close-circle.png" alt="cancel user">
-                        <img class="button" src="icons/accept-circle.png" alt="add user">
+                            <img src="icons/user-circle.png" alt="img user">
+                            <h4>Phil K</h4>
+                        </div>
+                        <div class="button-requests">
+                            <img  onclick="CancelFriend(this)" class="button" src="icons/close-circle.png" alt="cancel user" onclick="remov(this)">
+                            <img  onclick="addFriend(this)" class="button" src="icons/accept-circle.png" alt="add user">
 
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class ="friend">
-                <div class="black">
-                    <h2 id="num">500+</h2>
+            <!-- ___________________________________ Your Connection __________________________________ -->
+            <div class="friend">
+                <div class="headother">
+                    <h2 id="num">418</h2>
                     <p> Your Connections </p>
                 </div>
 
                 <div class="new-friend">
                     <div class="name-friend">
-                    <img src="icons/user-circle.png" alt="img user">
-                    <h4> AdrineD</h4>
+                        <img src="icons/user-circle.png" alt="img user">
+                        <h4> AdrineD</h4>
+                    </div>
                 </div>
-            </div>
 
-            <div class="new-friend">
-                <div class="name-friend">
-                <img src="icons/user-circle.png" alt="img user">
-                <h4> Anny J</h4>
+                <div class="new-friend">
+                    <div class="name-friend">
+                        <img src="icons/user-circle.png" alt="img user">
+                        <h4> Anny J</h4>
+                    </div>
+                </div>
+
+                <div class="new-friend">
+                    <div class="name-friend">
+                        <img src="icons/user-circle.png" alt="img user">
+                        <h4> Alayne T</h4>
+                    </div>
+                </div>
+
+                <div class="new-friend">
+                    <div class="name-friend">
+                        <img src="icons/user-circle.png" alt="img user">
+                        <h4> Arry Y</h4>
+                    </div>
+
+                </div>
+
+                <div class="view-more">
+                    <a href="#"> View More</a>
+                </div>
+
             </div>
         </div>
-
-            <div class="new-friend">
-                <div class="name-friend">
-                <img src="icons/user-circle.png" alt="img user">
-                <h4> Alayne T</h4>
-            </div>
-        </div>
-
-            <div class="new-friend">
-                <div class="name-friend">
-                <img src="icons/user-circle.png" alt="img user">
-                <h4> Arry Y</h4>
-            </div>
-
-        </div>
-
-        <div class="view-more">
-            <a href="#"> View More</a>
-        </div>
-
     </div>
-        </div>
     </div>
-    </div>
-    
+
 </body>
+
 </html>
